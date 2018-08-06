@@ -8,6 +8,12 @@
     <body>
         <div class="container" id="app">
             <h3 class="text-center">VueNews</h3>
+
+            <select v-model="section">
+                <option v-for="section in sections" :value="section">{{section}}</option>
+            </select>
+            <a @click="getPosts(section)" class="button expanded">Reload</a>
+
             <news-list :results="results"></news-list>
         </div>
         <script src="https://unpkg.com/vue"></script>
