@@ -1,7 +1,7 @@
 
 
 const ApiBaseUrl = "https://api.nytimes.com/svc/topstories/v2/"
-const ApiKey = "8aaaef35bd1b4b509c9ac03b5c14790c"
+const ApiKey = ""
 const SECTIONS = "home,world,technology,arts"
 
 function buildUrl(section) {
